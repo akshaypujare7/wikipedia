@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entryTitle }} not found!
+{% endblock %}
+
+{% block body %}
+    <h1>Your specified entry does not exist</h1>
+    <p>Please click <a href= "{% url 'newEntry' %}">here </a>to add your entry in our wiki!
+    Or please use the sidebar to the left to navigate back home.</p>
+
+{% endblock %}
